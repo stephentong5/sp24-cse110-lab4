@@ -30,3 +30,6 @@
     F. true because if you put any integer other than 0 into Boolean() then it becomes true and true === true because they are the same type and same value. <br/>
 15. === is a strict equality operator so type conversion will not occur. == will use type conversion if two values are different types. For example '1' == 1 is true, but '1' === 1 is false. This is because in the first case '1' is converted to 1 because of the == operator and 1 and 1 are equal. In the second case '1' is not converted and '1' as a sring is the not the same as 1 as an integer so false is returned.
 16. In part2-question16.js
+17. The result will be [2, 4, 6]. This is because modifyArray will take each value of the array and call doSomething with it. It will then push that value into newArr. This means 1 is called with doSomething with turns it into 2 and then 2 is pushed as the first value in newArr. This happens with all the values, so they are all effectively multiplied by 2.
+18. In part2-question18.js
+19. The output is 1 and then 4 and then 3 and finally 2.
